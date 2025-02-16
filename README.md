@@ -13,3 +13,5 @@ This solution demonstrates two ways to get the client IP Address and display it 
    - The `Home.razor` component injects the `AppState` service and retrieves the IP address and circuit ID to display them on the screen.
    - This will only work if web sockets are enabled.
 	
+[Sample](https://blazorip-bah4f8e7avdpfycs.northeurope-01.azurewebsites.net/) published on Azure Web app (free tier)
+

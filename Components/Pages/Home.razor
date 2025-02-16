@@ -1,0 +1,23 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Server.Circuits
+@inject AppState AppState
+@inject CircuitHandler CircuitHandler
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world! @ipAddress, @circuitId (From App State via CircuitHandler)</h1>
+
+Welcome to your new app.
+
+@code {
+  private string ipAddress;
+  private string circuitId;
+
+  protected override void OnInitialized()
+  {
+
+    var state = AppState.GetIPAddress();
+    ipAddress = state?.ipAddress;
+    circuitId = state?.circuitId;
+  }
+}
